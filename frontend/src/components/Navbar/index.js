@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faHouse as farFaHouse } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -57,9 +57,37 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-        <Link to="/">
-          <FontAwesomeIcon icon={faHouse} size={iconSize} />
+        <Link className="home-icon" to="/">
+          <FontAwesomeIcon icon={farFaHouse} size={iconSize} />
         </Link>
+        {isMobile ? (
+          <div ref={menuRef}>
+            <button className="hamburger-menu" onClick={toggleMenu}>
+              <i className="fas fa-bars"></i>
+            </button>
+            {isMenuOpen && (
+              <nav className="mobile-nav">
+                <Link to="/library" className="link" onClick={toggleMenu}>
+                  Library
+                </Link>
+                <Link to="/contact-me" className="contact link" onClick={toggleMenu}>
+                  Contact Me
+                  <i className="fas fa-arrow-right"></i>
+                </Link>
+              </nav>
+            )}
+          </div>
+        ) : (
+          <nav>
+            <Link to="/library" className="link">
+              Library
+            </Link>
+            <Link to="/contact-me" className="contact link">
+              Contact Me
+              <i className="fas fa-arrow-right"></i>
+            </Link>
+          </nav>
+        )}
       </div>
     </header>
   )

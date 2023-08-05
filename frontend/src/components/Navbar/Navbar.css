@@ -1,0 +1,153 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  padding: 0 80px;
+  background-color:  #292929;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: 10;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  padding: 0.25rem 0.75rem;
+  font-size: 18px;
+}
+
+.link:hover {
+  background-color: #4a5568;
+}
+
+.link,
+nav a {
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+nav a {
+  margin-right: 1.25rem;
+  text-decoration: none;
+}
+
+.home-icon {
+  color: #ffffff;
+}
+
+.contact {
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+.contact i {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+}
+
+.hamburger-menu {
+  display: none;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  background-color: #292929;
+  width: 200px;
+  height: calc(100% - 80px);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title-font {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 0 10px;
+    /* reduce the padding */
+    background-color: #2d3748;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    z-index: 10;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
