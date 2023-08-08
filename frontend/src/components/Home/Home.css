@@ -1,0 +1,78 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;height: 100vh;
+}
+
+.home-text {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.home-image {
+  height: 500px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+}
+
+.manamusic-text {
+  font-size: 2em;
+}
+
+@media  screen and (max-width: 1000px) {
+  .home-text {
+    font-size: 3em
+  }
+
+  .home-image {
+    height: 400px;
+  }
+
+  .manamusic-text {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home-text {
+    font-size: 2.5em;
+  }
+
+  .home-image {
+    height: 300px;
+  }
+
+  .manamusic-text {
+    font-size: 1.6em;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .home-text {
+    font-size: 2em;
+  }
+
+  .home-image {
+    height: 250px;
+  }
+
+  .manamusic-text {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home-text {
+    font-size: 1.8em;
+  }
+
+  .home-image {
+    height: 200px;
+  }
+
+  .manamusic-text {
+    font-size: 1.2em;
+  }
+}
