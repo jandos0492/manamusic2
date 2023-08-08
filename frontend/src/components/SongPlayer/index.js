@@ -1,15 +1,8 @@
 import React, { useState } from "react";
-import {
-  PlayButton,
-  PrevButton,
-  NextButton,
-  Cover,
-  Timer,
-  Progress,
-} from "react-soundplayer/components"
+import ReactAudioPlayer from "react-audio-player";
 import "./SongPlayer.css";
 
-const SongPlayer = (title, albumCover, audioUrl) => {
+const SongPlayer = ({ title, audioUrl }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const togglePlay = () => {
@@ -18,22 +11,14 @@ const SongPlayer = (title, albumCover, audioUrl) => {
 
   return (
     <div className="song-player">
-      <Cover
-        trackTitle={title}
-        trackArtist="Manas Bulan"
-        trackCover={albumCover}
+      <h3>{title}</h3>
+      <ReactAudioPlayer
+        src={audioUrl}
+        autoPlay={isPlaying}
+        controls
+        onPlay={togglePlay}
+        onPause={togglePlay}
       />
-      <div className="player-controls">
-        <PlayButton
-          playing={isPlaying}
-          onTogglePlay={togglePlay}
-          className="play-button"
-        />
-        <PrevButton className="prev-button" />
-        <NextButton className="next-button" />
-        <Timer className="timer" />
-        <Progress className="progress" />
-      </div>
     </div>
   );
 };
