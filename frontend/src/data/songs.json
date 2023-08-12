@@ -1,3 +1,4 @@
 [
-  {"id": 1, "title": "Men Dale", "albumCover": "/images/album-logos/men-dale.jpg", "audioUrl": "/songs/men-dale.mp3"}
+  {"id": 1, "title": "Men Dale", "albumCover": "/images/album-covers/men-dale.jpg", "audioUrl": "/songs/men-dale.mp3"},
+  {"id": 2, "title": "Не Люби", "albumCover": "/images/album-covers/sagyndym.jpg", "audioUrl": "/songs/ne-lyubi.mp3"}
 ]
