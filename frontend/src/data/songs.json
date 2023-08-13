@@ -1,7 +1,7 @@
 [
-  {"id": 1, "title": "Men Dale", "albumCover": "/images/album-covers/men-dale.jpg", "audioUrl": "/songs/men-dale.mp3"},
+  {"id": 1, "title": "Jakyn Elem", "albumCover": "/images/album-covers/jakyn-elem.jpg", "audioUrl": "/songs/jakyn-elem.mp3"},
   {"id": 2, "title": "Не Люби", "albumCover": "/images/album-covers/sagyndym.jpg", "audioUrl": "/songs/ne-lyubi.mp3"},
   {"id": 3, "title": "Уялбачы", "albumCover": "/images/album-covers/yalbachi.jpg", "audioUrl": "/songs/yilabachi.mp3"},
   {"id": 4, "title": "Бек Эми", "albumCover": "/images/album-covers/bek-emi.jpg", "audioUrl": "/songs/bek-emi.mp3"},
-  {"id": 5, "title": "Jakyn Elem", "albumCover": "/images/album-covers/jakyn-elem.jpg", "audioUrl": "/songs/jakyn-elem.mp3"}
+  {"id": 5, "title": "Men Dale", "albumCover": "/images/album-covers/men-dale.jpg", "audioUrl": "/songs/men-dale.mp3"}
 ]
