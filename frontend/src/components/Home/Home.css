@@ -7,7 +7,7 @@
 }
 
 .home-text {
-  font-size: 6em;
+  font-size: 8em;
   margin-bottom: 20px;
 }
 
@@ -19,6 +19,12 @@
 
 .manamusic-text {
   font-size: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-text {
+    font-size: 6em;
+  }
 }
 
 @media  screen and (max-width: 1000px) {

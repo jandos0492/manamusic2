@@ -1,0 +1,126 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  height: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #292929;
+  border-radius: 15px;
+}
+
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-form .form-group {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.contact-form .form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #77674a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.email-sent {
+  font-size: 20px;
+  color: #4CAF50;
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .contact-form {
+    max-width: 400px;
+  }
+
+  .form-group {
+    max-width: 80%;
+  }
+
+  .email-sent {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-form {
+    padding: 0;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-right: 60px;
+    padding-bottom: 150px;
+    padding-left: 60px;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 18px;
+  }
+}
