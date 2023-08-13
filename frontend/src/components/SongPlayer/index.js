@@ -1,17 +1,27 @@
-import React, { useRef } from "react";
+import React, { useState, useEffect } from "react";
 import ReactAudioPlayer from "react-audio-player";
 import "./SongPlayer.css";
 
 const SongPlayer = ({ title, audioUrl, albumCover, isPlaying, onPlay }) => {
-  const audioRef = useRef(null)
+  const [isPaused, setIsPaused] = useState(true);
+
+  useEffect(() => {
+    if (!isPlaying) {
+      setIsPaused(true);
+    }
+  }, [isPlaying]);
 
   const togglePlay = () => {
-    onPlay();
+    if (isPlaying) {
+      setIsPaused(!isPaused);
+    } else {
+      setIsPaused(false);
+      onPlay();
+    }
   };
 
-  // Pause the audio player when isPlaying becomes false
-  if (!isPlaying && audioRef.current && audioRef.current.audioEl) {
-    audioRef.current.audioEl.pause();
+  const handlePause = () => {
+    setIsPaused(true);
   }
 
   return (
@@ -23,12 +33,11 @@ const SongPlayer = ({ title, audioUrl, albumCover, isPlaying, onPlay }) => {
       )}
       <h3>{title}</h3>
       <ReactAudioPlayer
-        ref={audioRef}
         src={audioUrl}
-        autoPlay={isPlaying}
+        autoPlay={isPlaying && !isPaused}
         controls
+        onPause={handlePause}
         onPlay={togglePlay}
-        onPause={togglePlay}
       />
     </div>
   );

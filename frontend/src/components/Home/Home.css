@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;height: 100vh;
+  justify-content: center;
+  height: 100vh;
 }
 
 .home-text {
-  font-size: 5em;
+  font-size: 6em;
   margin-bottom: 20px;
 }
 
@@ -22,7 +23,7 @@
 
 @media  screen and (max-width: 1000px) {
   .home-text {
-    font-size: 3em
+    font-size: 4em
   }
 
   .home-image {
@@ -36,7 +37,7 @@
 
 @media screen and (max-width: 700px) {
   .home-text {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
 
   .home-image {
@@ -51,7 +52,7 @@
 
 @media screen and (max-width: 600px) {
   .home-text {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   .home-image {
@@ -74,5 +75,10 @@
 
   .manamusic-text {
     font-size: 1.2em;
+  }
+
+  .home {
+    justify-content: start;
+    margin-top: 200px;
   }
 }
