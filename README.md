@@ -1,10 +1,21 @@
 # ManaMusic Portfolio Website
 
-<img src="./frontend/public/images/logos/manamusic.jpeg" alt="ManaMusic Logo" width="200px">
+<img src="./frontend/public/images/logos/manamusic.jpeg" alt="ManaMusic Logo" width="150px">
 
 Welcome to the ManaMusic portfolio website repository! This website serves as a showcase for the talented musician, Manas, and provides a platform to share their music and connect with fans. The website is live and can be accessed at [https://manamusic.onrender.com/](https://manamusic.onrender.com/).
 
-## Screenshots
+
+## Table of Contents
+
+- [Screenshots](#screenshots)
+- [About](#about)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [License](#license)
+
+<h2 id="screenshots">Screenshots</h2>
 
 Here are some screenshots of the ManaMusic portfolio website:
 
@@ -20,20 +31,21 @@ Here are some screenshots of the ManaMusic portfolio website:
 
 <img src="./frontend/public/images/screenshots/contact-me.jpg" alt="Contact Page Screenshot" width="300">
 
-## Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [License](#license)
 
-## About {#about}
+<h2 id="about">About</h2>
 
 ManaMusic is a portfolio website dedicated to showcasing the musical talent of my friend Manas. The website offers a visually appealing and user-fiedly platform for fans and visitors to listen to their music, view album covers.
 
-## Features {#features}
+<h2 id="features">Features</h2>
+
+- Listen to Manas's latest tracks.
+- iew album covers and titles.
+- Connect with Manas on social media.
+- Contact Manas for inquiries and collaborations.
+
+
+<h2 id="technologies-used">Technologies Used</h2>
 
 - HTML5
 - CSS
@@ -44,7 +56,7 @@ ManaMusic is a portfolio website dedicated to showcasing the musical talent of m
 - Express (to set up email configuration)
   
 
-## Getting Started {#getting-started}
+<h2 id="getting-started">Getting Started</h2>
 
 To run the project locally, follow these steps: 
 
@@ -56,12 +68,12 @@ To run the project locally, follow these steps:
 The website should now be accessible in your browser at `http://localhost:3000`.
 
 
-## Usage {#usage}
+<h2 id="usage">Usage</h2>
 
 Visit the live website at https://manamusic.onrender.com/ to explore Manas's music, albums and connect on social media.
 
 
-## License {#license}
+<h2 id="license">License</h2>
 
 This project is licensed under the MIT License.
 
